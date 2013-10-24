@@ -1,7 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventTrackerWebService", "EventTracker\EventTrackerWebService.csproj", "{9D0DE291-B590-428D-829F-3860B11CB883}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventTrackerWebService", "Services\EventTrackerWebServices\EventTrackerWebService.csproj", "{9D0DE291-B590-428D-829F-3860B11CB883}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{EB5D6724-2D8C-4A92-8013-1C1830D847CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{7B662A64-D2EB-4730-8F4E-59825387BEBC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{608F9178-BE7E-4FF8-8D00-508D16C5B600}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{4B72ABBE-F91B-49E0-9433-0D067E53D0B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -16,5 +24,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9D0DE291-B590-428D-829F-3860B11CB883} = {7B662A64-D2EB-4730-8F4E-59825387BEBC}
 	EndGlobalSection
 EndGlobal
