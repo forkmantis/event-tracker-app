@@ -1,31 +1,16 @@
-using System;
-using System.Linq;
-using System.Configuration;
-using System.Collections.Generic;
 using System.Web.Mvc;
-using ServiceStack.Configuration;
-using ServiceStack.CacheAccess;
-using ServiceStack.CacheAccess.Providers;
+using EventTracker.Web.Services.Application.App_Start;
 using ServiceStack.Mvc;
-using ServiceStack.OrmLite;
-using ServiceStack.ServiceInterface;
 using ServiceStack.ServiceInterface.Auth;
-using ServiceStack.ServiceInterface.ServiceModel;
 using ServiceStack.WebHost.Endpoints;
 
-[assembly: WebActivator.PreApplicationStartMethod(typeof(EventTracker.App_Start.AppHost), "Start")]
-
-/**
- * Entire ServiceStack Starter Template configured with a 'Hello' Web Service and a 'Todo' Rest Service.
- *
- * Auto-Generated Metadata API page at: /metadata
- * See other complete web service examples at: https://github.com/ServiceStack/ServiceStack.Examples
- */
-
-namespace EventTracker.App_Start
+[assembly: WebActivator.PreApplicationStartMethod(typeof(AppHost), "Start")]
+namespace EventTracker.Web.Services.Application.App_Start
 {
-	//A customizeable typed UserSession that can be extended with your own properties
-	//To access ServiceStack's Session, Cache, etc from MVC Controllers inherit from ControllerBase<CustomUserSession>
+	/// <summary>
+	/// A customizeable typed UserSession that can be extended with your own properties
+	/// To access ServiceStack's Session, Cache, etc from MVC Controllers inherit from <see cref="ServiceStack.Mvc.ControllerBase<CustomUserSession>"/>.
+	/// </summary>
 	public class CustomUserSession : AuthUserSession
 	{
 		public string CustomProperty { get; set; }

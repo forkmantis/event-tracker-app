@@ -1,10 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web.Http;
+﻿using System.Web.Http;
 
-namespace EventTracker
+namespace EventTracker.Web.Services.Application.App_Start
 {
+	/// <summary>
+	/// Part of Microsofts new WebAPI.
+	/// </summary>
+	/// <remarks>
+	/// Not used with ServiceStack.NET
+	/// </remarks>
 	public static class WebApiConfig
 	{
 		public static void Register(HttpConfiguration config)
