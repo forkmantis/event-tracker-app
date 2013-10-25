@@ -1,11 +1,12 @@
 using System.Web.Mvc;
-using EventTracker.Web.Services.Application.App_Start;
+using EventTracker.Web.Services;
+using EventTracker.Web.Application.App_Start;
 using ServiceStack.Mvc;
 using ServiceStack.ServiceInterface.Auth;
 using ServiceStack.WebHost.Endpoints;
 
 [assembly: WebActivator.PreApplicationStartMethod(typeof(AppHost), "Start")]
-namespace EventTracker.Web.Services.Application.App_Start
+namespace EventTracker.Web.Application.App_Start
 {
 	/// <summary>
 	/// A customizeable typed UserSession that can be extended with your own properties

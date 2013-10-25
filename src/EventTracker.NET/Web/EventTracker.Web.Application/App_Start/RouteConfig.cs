@@ -1,7 +1,7 @@
 ﻿using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace EventTracker.Web.Services.Application.App_Start
+namespace EventTracker.Web.Application.App_Start
 {
 	public class RouteConfig
 	{

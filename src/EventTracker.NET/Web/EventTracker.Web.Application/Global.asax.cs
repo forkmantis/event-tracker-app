@@ -1,9 +1,9 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
-using EventTracker.Web.Services.Application.App_Start;
+using EventTracker.Web.Application.App_Start;
 
-namespace EventTracker.Web.Services.Application
+namespace EventTracker.Web.Application
 {
 	// Note: For instructions on enabling IIS6 or IIS7 classic mode, 
 	// visit http://go.microsoft.com/?LinkId=9394801

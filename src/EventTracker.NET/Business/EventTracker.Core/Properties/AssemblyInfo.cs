@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("EventTracker.Web.Services.Application")]
+[assembly: AssemblyTitle("EventTracker.Core")]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("7b2fedff-46cd-4b65-8e45-8e88040946e5")]
+[assembly: Guid("ec94b3ae-0143-4008-b9f8-67f9bb6c5218")]

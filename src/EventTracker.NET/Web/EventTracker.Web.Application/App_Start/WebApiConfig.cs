@@ -1,6 +1,6 @@
 ﻿using System.Web.Http;
 
-namespace EventTracker.Web.Services.Application.App_Start
+namespace EventTracker.Web.Application.App_Start
 {
 	/// <summary>
 	/// Part of Microsofts new WebAPI.

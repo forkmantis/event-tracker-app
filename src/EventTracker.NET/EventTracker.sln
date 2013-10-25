@@ -1,22 +1,26 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventTracker.Web.Service.Application", "Services\EventTracker.Web.Services.Application\EventTracker.Web.Service.Application.csproj", "{9D0DE291-B590-428D-829F-3860B11CB883}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventTracker.Web.Application", "Web\EventTracker.Web.Application\EventTracker.Web.Application.csproj", "{9D0DE291-B590-428D-829F-3860B11CB883}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{EB5D6724-2D8C-4A92-8013-1C1830D847CA}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{7B662A64-D2EB-4730-8F4E-59825387BEBC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{7B662A64-D2EB-4730-8F4E-59825387BEBC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{608F9178-BE7E-4FF8-8D00-508D16C5B600}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{4B72ABBE-F91B-49E0-9433-0D067E53D0B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventTracker.Web.Services", "Services\EventTracker.Web.Services\EventTracker.Web.Services.csproj", "{B9E6C57C-DB42-4668-8051-8C9E48CD3441}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventTracker.Web.Services", "Web\EventTracker.Web.Services\EventTracker.Web.Services.csproj", "{B9E6C57C-DB42-4668-8051-8C9E48CD3441}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FA22D55F-8671-407A-A1EE-98E1EEFA6294}"
 	ProjectSection(SolutionItems) = preProject
 		SharedAssemblyInfo.cs = SharedAssemblyInfo.cs
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventTracker.Core", "Business\EventTracker.Core\EventTracker.Core.csproj", "{E750EDDC-3724-44F0-B29E-450D3257B5F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventTracker.Data.Orm", "Data\EventTracker.Data.Orm\EventTracker.Data.Orm.csproj", "{7DBDBB07-74DD-47E6-A010-A749AC967A5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventTracker.Web.UI", "Web\EventTracker.Web.UI\EventTracker.Web.UI.csproj", "{9D7E4298-43C2-4F8B-BCBB-883409667DC6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +36,18 @@ Global
 		{B9E6C57C-DB42-4668-8051-8C9E48CD3441}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9E6C57C-DB42-4668-8051-8C9E48CD3441}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9E6C57C-DB42-4668-8051-8C9E48CD3441}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E750EDDC-3724-44F0-B29E-450D3257B5F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E750EDDC-3724-44F0-B29E-450D3257B5F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E750EDDC-3724-44F0-B29E-450D3257B5F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E750EDDC-3724-44F0-B29E-450D3257B5F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DBDBB07-74DD-47E6-A010-A749AC967A5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DBDBB07-74DD-47E6-A010-A749AC967A5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DBDBB07-74DD-47E6-A010-A749AC967A5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DBDBB07-74DD-47E6-A010-A749AC967A5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D7E4298-43C2-4F8B-BCBB-883409667DC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D7E4298-43C2-4F8B-BCBB-883409667DC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D7E4298-43C2-4F8B-BCBB-883409667DC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D7E4298-43C2-4F8B-BCBB-883409667DC6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,5 +55,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{9D0DE291-B590-428D-829F-3860B11CB883} = {7B662A64-D2EB-4730-8F4E-59825387BEBC}
 		{B9E6C57C-DB42-4668-8051-8C9E48CD3441} = {7B662A64-D2EB-4730-8F4E-59825387BEBC}
+		{9D7E4298-43C2-4F8B-BCBB-883409667DC6} = {7B662A64-D2EB-4730-8F4E-59825387BEBC}
+		{E750EDDC-3724-44F0-B29E-450D3257B5F7} = {608F9178-BE7E-4FF8-8D00-508D16C5B600}
+		{7DBDBB07-74DD-47E6-A010-A749AC967A5B} = {4B72ABBE-F91B-49E0-9433-0D067E53D0B4}
 	EndGlobalSection
 EndGlobal
