@@ -174,7 +174,7 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\EventTracker.Web.Services\EventTracker.Web.Services.csproj">
+    <ProjectReference Include="..\EventTracker.Web.Services\EventTracker.Web.Services.csproj">
       <Project>{B9E6C57C-DB42-4668-8051-8C9E48CD3441}</Project>
       <Name>EventTracker.Web.Services</Name>
     </ProjectReference>
